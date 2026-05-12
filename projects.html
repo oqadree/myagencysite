@@ -1,103 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Modern Business - Start Project Template</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100 bg-light">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">AUDAI ALQADERI</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Projects Section-->
-            <section class="py-5">
-                <div class="container px-5 mb-5">
-                    <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Signature Capture</h2>
-                                            <p>The Signature Capture project focuses on developing NetSuite scripts for capturing customer signatures during deliveries and invoicing. The project enables drivers to use tablets or iPads to capture signatures, which are then saved on the NetSuite platform. Custom fields are added to capture signatures, and PDF reports are modified to include the signatures when printed. Access to modify records is restricted to authorized personnel, and GPS coordinates are also captured. Risks and issues include limited file cabinet size, tablet security, user accessibility challenges, and potential technical difficulties. The key deliverables are the Functional Requirements Document and Design Specification, which include customized Suite Scripts, GPS integration, and workflows/scripts.</p>
-                                        </div>
-                                        <img class="img-fluid" src="assets/Signature.png"  alt="..." />
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">NetSuite API JavaScript Code Optimization and Enhancement</h2>
-                                            <p>The NetSuite API JavaScript Code Optimization and Enhancement project involves consulting with a client to rewrite their existing code, fix bugs, and improve performance. The objective is to optimize the code's efficiency, enhance its functionality, and address any bugs or issues. Deliverables include consulting on code improvement, rewriting the code using best practices, testing and performance optimization. Risks include the complexity of the existing code, potential bugs, timeline impact, and cost considerations. The project aims to achieve a more efficient and functional NetSuite API JavaScript code through careful analysis, rewriting, and performance optimization.</p>
-                                        </div>
-                                        <img class="img-fluid"  src="assets/Code.png" alt="..." />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Call to action section-->
-            <section class="py-5 bg-gradient-primary-to-secondary text-white">
-                <div class="container px-5 my-5">
-                    <div class="text-center">
-                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contact</a>
-                    </div>
-                </div>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Projects — Audai Al-Qaderi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">AUDAI AL-QADERI</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle"><i class="bi bi-list"></i></button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="section-label">Portfolio</div>
+    <h1>Projects & <span class="accent">Deliverables</span></h1>
+    <p class="page-hero-sub">Enterprise engineering work across data migration, automation, integrations, and financial systems at Shipa Delivery.</p>
+  </div>
+</section>
+
+<section class="projects-section">
+  <div class="container">
+
+    <!-- RELEASE BADGE -->
+    <div class="release-banner">
+      <span class="release-dot"></span>
+      <strong>2025–2026 Release</strong> — New: Auto Pricing Engine · SMS/WhatsApp Integration · Firebase→Backendless Migration
+    </div>
+
+    <!-- CATEGORY: DATA MIGRATION -->
+    <div class="proj-category">
+      <div class="cat-label"><i class="bi bi-database-gear"></i> Data Migration</div>
+      <div class="proj-list">
+
+        <div class="proj-full-card">
+          <div class="proj-full-header">
+            <div class="proj-full-icon db"><i class="bi bi-database-gear"></i></div>
+            <div>
+              <h2>Firebase → Backendless Multi-Project Migration</h2>
+              <div class="proj-meta"><span class="badge-new">2025–2026</span><span class="badge-status">In Progress</span></div>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+          </div>
+          <p>A large-scale, multi-workstream database migration from Firebase (Realtime DB + Firestore) to Backendless. The project involves parallel migration tracks for different operational domains — delivery tracking, customer records, financial transactions — with schema redesign, data transformation scripts, integrity validation, and zero-downtime cutover planning.</p>
+          <div class="proj-highlights">
+            <div><i class="bi bi-check2"></i> Schema mapping & transformation scripts</div>
+            <div><i class="bi bi-check2"></i> High-volume record batch processing</div>
+            <div><i class="bi bi-check2"></i> Data integrity validation & reconciliation</div>
+            <div><i class="bi bi-check2"></i> Rollback strategies & cutover playbooks</div>
+          </div>
+          <div class="proj-tags"><span>Firebase</span><span>Backendless</span><span>JavaScript</span><span>Data Migration</span><span>REST API</span></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CATEGORY: AUTOMATION & PRICING -->
+    <div class="proj-category">
+      <div class="cat-label"><i class="bi bi-lightning-charge"></i> Automation & Pricing</div>
+      <div class="proj-list">
+
+        <div class="proj-full-card">
+          <div class="proj-full-header">
+            <div class="proj-full-icon pricing"><i class="bi bi-tags-fill"></i></div>
+            <div>
+              <h2>Auto Pricing Engine for Customers</h2>
+              <div class="proj-meta"><span class="badge-new">New 2025</span></div>
+            </div>
+          </div>
+          <p>Automated pricing calculation system built in NetSuite SuiteScript. Dynamically computes customer pricing based on tier classifications, delivery zones, package weight/dimensions, and volume rules — eliminating manual quoting and ensuring consistent margin application across all customer accounts.</p>
+          <div class="proj-highlights">
+            <div><i class="bi bi-check2"></i> Dynamic pricing rules engine</div>
+            <div><i class="bi bi-check2"></i> Customer tier & zone-based logic</div>
+            <div><i class="bi bi-check2"></i> Real-time quote generation</div>
+            <div><i class="bi bi-check2"></i> NetSuite CRM integration</div>
+          </div>
+          <div class="proj-tags"><span>NetSuite</span><span>SuiteScript</span><span>CRM</span><span>Pricing Logic</span></div>
+        </div>
+
+        <div class="proj-full-card">
+          <div class="proj-full-header">
+            <div class="proj-full-icon inv"><i class="bi bi-boxes"></i></div>
+            <div>
+              <h2>Inventory & Fulfillment Approval Workflow</h2>
+              <div class="proj-meta"><span class="badge-status">Ongoing</span></div>
+            </div>
+          </div>
+          <p>Multi-step fulfillment approval process built on NetSuite workflows. Manages high-volume inventory requests with automated routing based on business rules, escalation paths for exceptions, approval gating before fulfillment execution, and full audit logging. Integrates with warehouse operations for real-time inventory visibility.</p>
+          <div class="proj-highlights">
+            <div><i class="bi bi-check2"></i> Multi-level approval routing</div>
+            <div><i class="bi bi-check2"></i> Exception escalation & alerting</div>
+            <div><i class="bi bi-check2"></i> Real-time inventory sync</div>
+            <div><i class="bi bi-check2"></i> Full audit trail</div>
+          </div>
+          <div class="proj-tags"><span>NetSuite Workflows</span><span>Inventory</span><span>SuiteScript</span><span>Operations</span></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CATEGORY: FINANCIAL SYSTEMS -->
+    <div class="proj-category">
+      <div class="cat-label"><i class="bi bi-bar-chart-line"></i> Financial Systems & Reporting</div>
+      <div class="proj-list">
+
+        <div class="proj-full-card">
+          <div class="proj-full-header">
+            <div class="proj-full-icon fin"><i class="bi bi-file-earmark-bar-graph"></i></div>
+            <div>
+              <h2>High-Volume Financial Reports & Accounts</h2>
+              <div class="proj-meta"><span class="badge-status">Ongoing</span></div>
+            </div>
+          </div>
+          <p>Custom financial reporting suite built on SuiteAnalytics. Generates transaction reports, account reconciliation summaries, and executive dashboards handling tens of thousands of daily records. Includes saved searches, custom report layouts, and scheduled delivery to stakeholders — with drill-down capability for audit and compliance needs.</p>
+          <div class="proj-highlights">
+            <div><i class="bi bi-check2"></i> SuiteAnalytics custom reports</div>
+            <div><i class="bi bi-check2"></i> Automated scheduled reporting</div>
+            <div><i class="bi bi-check2"></i> Account reconciliation workflows</div>
+            <div><i class="bi bi-check2"></i> Executive KPI dashboards</div>
+          </div>
+          <div class="proj-tags"><span>SuiteAnalytics</span><span>Finance</span><span>Reporting</span><span>NetSuite</span></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CATEGORY: INTEGRATIONS -->
+    <div class="proj-category">
+      <div class="cat-label"><i class="bi bi-plug"></i> API & Messaging Integrations</div>
+      <div class="proj-list">
+
+        <div class="proj-full-card">
+          <div class="proj-full-header">
+            <div class="proj-full-icon msg"><i class="bi bi-chat-dots-fill"></i></div>
+            <div>
+              <h2>SMS & WhatsApp Provider Integration</h2>
+              <div class="proj-meta"><span class="badge-new">New 2025</span></div>
+            </div>
+          </div>
+          <p>Customer-facing messaging integration connecting leading SMS and WhatsApp Business API providers to the Shipa platform backend (NetSuite + Backendless). Enables automated delivery status notifications, ETA updates, proof-of-delivery confirmations, and two-way customer support messaging — at the scale of a high-volume last-mile logistics operation.</p>
+          <div class="proj-highlights">
+            <div><i class="bi bi-check2"></i> SMS provider API integration</div>
+            <div><i class="bi bi-check2"></i> WhatsApp Business API setup</div>
+            <div><i class="bi bi-check2"></i> Webhook-driven event notifications</div>
+            <div><i class="bi bi-check2"></i> Two-way messaging & support flow</div>
+            <div><i class="bi bi-check2"></i> NetSuite + Backendless sync</div>
+          </div>
+          <div class="proj-tags"><span>SMS API</span><span>WhatsApp Business</span><span>Webhooks</span><span>REST</span><span>Backendless</span></div>
+        </div>
+
+        <div class="proj-full-card">
+          <div class="proj-full-header">
+            <div class="proj-full-icon api"><i class="bi bi-headset"></i></div>
+            <div>
+              <h2>Customer API Support & Integration Services</h2>
+              <div class="proj-meta"><span class="badge-status">Ongoing</span></div>
+            </div>
+          </div>
+          <p>Ongoing technical enablement for enterprise customers — covering REST API consultation, custom endpoint development, third-party connector configuration, request/response troubleshooting, and integration documentation. Supports customers across onboarding, go-live, and post-launch phases.</p>
+          <div class="proj-highlights">
+            <div><i class="bi bi-check2"></i> REST API design & documentation</div>
+            <div><i class="bi bi-check2"></i> Third-party connector setup</div>
+            <div><i class="bi bi-check2"></i> Integration testing & debugging</div>
+            <div><i class="bi bi-check2"></i> Customer onboarding support</div>
+          </div>
+          <div class="proj-tags"><span>REST API</span><span>Integration</span><span>Customer Support</span><span>Documentation</span></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- LEGACY PROJECTS -->
+    <div class="proj-category">
+      <div class="cat-label"><i class="bi bi-archive"></i> Earlier Projects</div>
+      <div class="proj-list two-col">
+
+        <div class="proj-full-card compact">
+          <div class="proj-full-header">
+            <div class="proj-full-icon sig"><i class="bi bi-pen"></i></div>
+            <div>
+              <h2>Signature Capture</h2>
+              <div class="proj-meta"><span>2023</span></div>
+            </div>
+          </div>
+          <p>SuiteScript solution enabling drivers to capture customer signatures on tablets/iPads at delivery. Saves signatures to NetSuite file cabinet, embeds them in PDF reports, and captures GPS coordinates. Includes access controls and custom fields for full audit compliance.</p>
+          <div class="proj-tags"><span>SuiteScript</span><span>GPS</span><span>PDF Reports</span><span>NetSuite</span></div>
+        </div>
+
+        <div class="proj-full-card compact">
+          <div class="proj-full-header">
+            <div class="proj-full-icon code"><i class="bi bi-code-slash"></i></div>
+            <div>
+              <h2>NetSuite API JS Optimization</h2>
+              <div class="proj-meta"><span>2023</span></div>
+            </div>
+          </div>
+          <p>Consulting engagement to rewrite, refactor and performance-optimize a client's existing NetSuite JavaScript API codebase. Delivered bug fixes, best-practice restructuring, and measurable performance improvements across their integration layer.</p>
+          <div class="proj-tags"><span>JavaScript</span><span>NetSuite API</span><span>Optimization</span></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container cta-inner">
+    <h2>Have a project in mind?</h2>
+    <p>I'm available for NetSuite development, data migration consulting, API integration, and enterprise backend work.</p>
+    <a href="contact.html" class="btn-primary">Get in Touch <i class="bi bi-arrow-right"></i></a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <div class="footer-logo">AUDAI AL-QADERI</div>
+      <div class="footer-sub">NetSuite · Backendless · Firebase · API</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://linkedin.com/in/odai-qadree-23370259" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://oqadree.github.io/myagencysite" target="_blank"><i class="bi bi-github"></i></a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 Audai Al-Qaderi. All rights reserved.</div>
+</footer>
+
+<script src="js/scripts.js"></script>
+</body>
 </html>
