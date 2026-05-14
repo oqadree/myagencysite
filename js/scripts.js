@@ -24,7 +24,7 @@ document.querySelectorAll('.proj-card, .proj-full-card, .exp-card, .stat-card').
   observer.observe(el);
 });
 
-// Contact form — AJAX submit to Formspree
+// Contact form — sends email via Web3Forms (no account needed, just access key)
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
   const submitBtn = document.getElementById('submit-btn');
@@ -35,27 +35,28 @@ if (contactForm) {
     submitBtn.disabled = true;
     submitBtn.innerHTML = 'Sending… <i class="bi bi-hourglass-split"></i>';
 
-    const data = new FormData(contactForm);
+    const formData = new FormData(contactForm);
+    const object = {};
+    formData.forEach((val, key) => { object[key] = val; });
 
     try {
-      const response = await fetch('https://formspree.io/f/xanonnqe', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(object)
       });
+      const result = await response.json();
 
-      if (response.ok) {
+      if (result.success) {
         contactForm.style.display = 'none';
         successMsg.style.display = 'block';
       } else {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = 'Try Again <i class="bi bi-arrow-clockwise"></i>';
-        alert('Something went wrong. Please email eng.odaiqadree@gmail.com directly.');
+        throw new Error(result.message || 'Submission failed');
       }
     } catch (err) {
       submitBtn.disabled = false;
-      submitBtn.innerHTML = 'Try Again <i class="bi bi-arrow-clockwise"></i>';
-      alert('Network error. Please email eng.odaiqadree@gmail.com directly.');
+      submitBtn.innerHTML = 'Send Message <i class="bi bi-send"></i>';
+      alert('Could not send message. Please email eng.odaiqadree@gmail.com directly.');
     }
   });
 }
