@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Resume — Audai Al-Qaderi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,700;9..144,900&family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
   <link rel="stylesheet" href="css/styles.css"/>
 </head>
@@ -13,14 +13,14 @@
 
 <nav class="site-nav">
   <div class="nav-inner">
-    <a class="nav-logo" href="index.html">AUDAI AL-QADERI</a>
+    <a class="nav-logo" href="index.html">Audai <span>Al-Qaderi</span></a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="resume.html" class="active">Resume</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </div>
-    <button class="nav-toggle" id="navToggle"><i class="bi bi-list"></i></button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="bi bi-list"></i></button>
   </div>
   <div class="nav-mobile" id="navMobile">
     <a href="index.html">Home</a>
@@ -33,7 +33,7 @@
 <section class="page-hero">
   <div class="container">
     <div class="section-label">Experience & Skills</div>
-    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;">
       <h1>Resume</h1>
       <a class="btn-primary" href="https://drive.google.com/file/d/1yZpktNwsWl8BVPBpRic006clQU5NrXat/view?usp=drive_link" target="_blank">
         <i class="bi bi-download"></i> Download PDF
@@ -50,7 +50,7 @@
       <div>
 
         <!-- EXPERIENCE -->
-        <div class="resume-block">
+        <div class="resume-block reveal">
           <div class="resume-block-title"><i class="bi bi-briefcase-fill"></i> Experience</div>
 
           <div class="exp-card">
@@ -62,13 +62,13 @@
               </div>
             </div>
             <div class="exp-body">
-              <p>Managing customization, deployment, and configuration for NetSuite and its APIs across a high-growth last-mile logistics platform. Key current workstreams include:</p>
-              <ul style="margin-top:10px;padding-left:18px;display:flex;flex-direction:column;gap:5px;">
+              <p>Managing customization, deployment, and configuration for NetSuite and its APIs across a high-growth last-mile logistics platform. Key workstreams include:</p>
+              <ul style="margin-top:12px;">
                 <li>Multi-project Firebase → Backendless data migration</li>
                 <li>Auto pricing engine for customer rate management</li>
-                <li>Inventory & fulfillment approval workflows (high-volume)</li>
+                <li>Inventory &amp; fulfillment approval workflows (high-volume)</li>
                 <li>Financial reporting and accounts for large transaction volumes</li>
-                <li>SMS & WhatsApp provider integration for customer notifications</li>
+                <li>SMS &amp; WhatsApp provider integration for customer notifications</li>
                 <li>Customer API support, integration consulting, and onboarding</li>
                 <li>Team leadership, JIRA project management, and roadmap reporting</li>
               </ul>
@@ -88,7 +88,7 @@
 
           <div class="exp-card">
             <div class="exp-header">
-              <div class="exp-date">2015 · 3 Months</div>
+              <div class="exp-date">2015 · 3 months</div>
               <div>
                 <div class="exp-title">System Administrator</div>
                 <div class="exp-company">Aljazeera Medical Centre · Qatar, Doha</div>
@@ -121,7 +121,7 @@
         </div>
 
         <!-- EDUCATION -->
-        <div class="resume-block">
+        <div class="resume-block reveal">
           <div class="resume-block-title"><i class="bi bi-mortarboard-fill"></i> Education</div>
           <div class="exp-card">
             <div class="exp-header">
@@ -135,23 +135,23 @@
           </div>
         </div>
 
-        <!-- SKILLS TABLE -->
-        <div class="resume-block">
+        <!-- SKILLS -->
+        <div class="resume-block reveal">
           <div class="resume-block-title"><i class="bi bi-tools"></i> Technical Skills</div>
           <div class="exp-card">
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
-              <div class="d-flex" style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 14px;font-size:13px;">NetSuite ERP & CRM</div>
-              <div class="d-flex" style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 14px;font-size:13px;">Firebase / Firestore</div>
-              <div class="d-flex" style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 14px;font-size:13px;">Backendless</div>
-              <div class="d-flex" style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 14px;font-size:13px;">SuiteScript / SuiteCloud</div>
-              <div class="d-flex" style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 14px;font-size:13px;">JavaScript</div>
-              <div class="d-flex" style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 14px;font-size:13px;">Python</div>
-              <div class="d-flex" style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 14px;font-size:13px;">REST API / Webhooks</div>
-              <div class="d-flex" style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 14px;font-size:13px;">SMS / WhatsApp API</div>
-              <div class="d-flex" style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 14px;font-size:13px;">Data Migration</div>
-              <div class="d-flex" style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 14px;font-size:13px;">SuiteAnalytics</div>
-              <div class="d-flex" style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 14px;font-size:13px;">JIRA</div>
-              <div class="d-flex" style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 14px;font-size:13px;">HTML / CSS</div>
+            <div class="skill-grid">
+              <div class="skill-tag">NetSuite ERP & CRM</div>
+              <div class="skill-tag">Firebase / Firestore</div>
+              <div class="skill-tag">Backendless</div>
+              <div class="skill-tag">SuiteScript / SuiteCloud</div>
+              <div class="skill-tag">JavaScript</div>
+              <div class="skill-tag">Python</div>
+              <div class="skill-tag">REST API / Webhooks</div>
+              <div class="skill-tag">SMS / WhatsApp API</div>
+              <div class="skill-tag">Data Migration</div>
+              <div class="skill-tag">SuiteAnalytics</div>
+              <div class="skill-tag">JIRA</div>
+              <div class="skill-tag">HTML / CSS</div>
             </div>
           </div>
         </div>
@@ -159,49 +159,36 @@
       </div>
 
       <!-- SIDEBAR -->
-      <div>
+      <div class="reveal">
+
         <div class="sidebar-card">
           <div class="sidebar-title">Contact</div>
-          <div style="display:flex;flex-direction:column;gap:12px;">
-            <div style="display:flex;align-items:center;gap:10px;font-size:14px;">
-              <i class="bi bi-geo-alt" style="color:var(--accent)"></i> Jordan, Amman
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;font-size:14px;">
-              <i class="bi bi-linkedin" style="color:var(--accent)"></i>
-              <a href="https://linkedin.com/in/odai-qadree-23370259" target="_blank" style="color:var(--text-muted)">LinkedIn Profile</a>
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;font-size:14px;">
-              <i class="bi bi-github" style="color:var(--accent)"></i>
-              <a href="https://oqadree.github.io/myagencysite" target="_blank" style="color:var(--text-muted)">GitHub</a>
-            </div>
+          <div class="sidebar-item"><i class="bi bi-geo-alt"></i> Jordan, Amman</div>
+          <div class="sidebar-item">
+            <i class="bi bi-linkedin"></i>
+            <a href="https://linkedin.com/in/odai-qadree-23370259" target="_blank">LinkedIn Profile</a>
+          </div>
+          <div class="sidebar-item">
+            <i class="bi bi-github"></i>
+            <a href="https://oqadree.github.io/myagencysite" target="_blank">GitHub</a>
+          </div>
+          <div class="sidebar-item">
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:eng.odaiqadree@gmail.com">eng.odaiqadree@gmail.com</a>
           </div>
         </div>
 
         <div class="sidebar-card">
           <div class="sidebar-title">Current Focus · 2026</div>
-          <div style="display:flex;flex-direction:column;gap:8px;">
-            <div style="font-size:13px;color:var(--text-muted);display:flex;align-items:flex-start;gap:8px;">
-              <i class="bi bi-arrow-right-circle" style="color:var(--accent);flex-shrink:0;margin-top:2px"></i>
-              Firebase → Backendless migration
-            </div>
-            <div style="font-size:13px;color:var(--text-muted);display:flex;align-items:flex-start;gap:8px;">
-              <i class="bi bi-arrow-right-circle" style="color:var(--accent);flex-shrink:0;margin-top:2px"></i>
-              Auto pricing engine
-            </div>
-            <div style="font-size:13px;color:var(--text-muted);display:flex;align-items:flex-start;gap:8px;">
-              <i class="bi bi-arrow-right-circle" style="color:var(--accent);flex-shrink:0;margin-top:2px"></i>
-              SMS & WhatsApp integrations
-            </div>
-            <div style="font-size:13px;color:var(--text-muted);display:flex;align-items:flex-start;gap:8px;">
-              <i class="bi bi-arrow-right-circle" style="color:var(--accent);flex-shrink:0;margin-top:2px"></i>
-              Financial reporting at scale
-            </div>
-          </div>
+          <div class="focus-item"><i class="bi bi-arrow-right-circle"></i> Firebase → Backendless migration</div>
+          <div class="focus-item"><i class="bi bi-arrow-right-circle"></i> Auto pricing engine</div>
+          <div class="focus-item"><i class="bi bi-arrow-right-circle"></i> SMS &amp; WhatsApp integrations</div>
+          <div class="focus-item"><i class="bi bi-arrow-right-circle"></i> Financial reporting at scale</div>
         </div>
 
         <div class="sidebar-card">
           <div class="sidebar-title">Soft Skills</div>
-          <div class="skill-chips" style="margin-top:0">
+          <div class="skill-chips">
             <span>Team Leadership</span>
             <span>Problem Solving</span>
             <span>Integration Planning</span>
@@ -214,6 +201,7 @@
         <a href="https://drive.google.com/file/d/1yZpktNwsWl8BVPBpRic006clQU5NrXat/view?usp=drive_link" target="_blank" class="btn-primary" style="width:100%;justify-content:center;margin-top:8px;">
           <i class="bi bi-download"></i> Download Full Resume
         </a>
+
       </div>
 
     </div>

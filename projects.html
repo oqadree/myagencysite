@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Projects — Audai Al-Qaderi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,700;9..144,900&family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
   <link rel="stylesheet" href="css/styles.css"/>
 </head>
@@ -13,14 +13,14 @@
 
 <nav class="site-nav">
   <div class="nav-inner">
-    <a class="nav-logo" href="index.html">AUDAI AL-QADERI</a>
+    <a class="nav-logo" href="index.html">Audai <span>Al-Qaderi</span></a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="resume.html">Resume</a>
       <a href="projects.html" class="active">Projects</a>
       <a href="contact.html">Contact</a>
     </div>
-    <button class="nav-toggle" id="navToggle"><i class="bi bi-list"></i></button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="bi bi-list"></i></button>
   </div>
   <div class="nav-mobile" id="navMobile">
     <a href="index.html">Home</a>
@@ -33,7 +33,7 @@
 <section class="page-hero">
   <div class="container">
     <div class="section-label">Portfolio</div>
-    <h1>Projects & <span class="accent">Deliverables</span></h1>
+    <h1>Projects &amp; <span class="accent">Deliverables</span></h1>
     <p class="page-hero-sub">Enterprise engineering work across data migration, automation, integrations, and financial systems at Shipa Delivery.</p>
   </div>
 </section>
@@ -41,17 +41,15 @@
 <section class="projects-section">
   <div class="container">
 
-    <!-- RELEASE BADGE -->
-    <div class="release-banner">
+    <div class="release-banner reveal">
       <span class="release-dot"></span>
-      <strong>2025–2026 New Releases</strong> — Auto Pricing Engine · SMS/WhatsApp Integration · Inventory & Fulfillment Workflow
+      <strong>2025–2026 New Releases</strong> &nbsp;—&nbsp; Auto Pricing Engine · SMS/WhatsApp Integration · Inventory & Fulfillment Workflow
     </div>
 
-    <!-- CATEGORY: DATA MIGRATION -->
-    <div class="proj-category">
+    <!-- DATA MIGRATION -->
+    <div class="proj-category reveal">
       <div class="cat-label"><i class="bi bi-database-gear"></i> Data Migration</div>
       <div class="proj-list">
-
         <div class="proj-full-card">
           <div class="proj-full-header">
             <div class="proj-full-icon db"><i class="bi bi-database-gear"></i></div>
@@ -62,19 +60,18 @@
           </div>
           <p>A large-scale, multi-workstream database migration from Firebase (Realtime DB + Firestore) to Backendless — successfully completed in 2022. The project ran across parallel migration tracks for different operational domains — delivery tracking, customer records, financial transactions — with schema redesign, data transformation scripts, integrity validation, and zero-downtime cutover execution.</p>
           <div class="proj-highlights">
-            <div><i class="bi bi-check2"></i> Schema mapping & transformation scripts</div>
+            <div><i class="bi bi-check2"></i> Schema mapping &amp; transformation scripts</div>
             <div><i class="bi bi-check2"></i> High-volume record batch processing</div>
-            <div><i class="bi bi-check2"></i> Data integrity validation & reconciliation</div>
-            <div><i class="bi bi-check2"></i> Rollback strategies & cutover playbooks</div>
+            <div><i class="bi bi-check2"></i> Data integrity validation &amp; reconciliation</div>
+            <div><i class="bi bi-check2"></i> Rollback strategies &amp; cutover playbooks</div>
           </div>
           <div class="proj-tags"><span>Firebase</span><span>Backendless</span><span>JavaScript</span><span>Data Migration</span><span>REST API</span></div>
         </div>
-
       </div>
     </div>
 
-    <!-- CATEGORY: AUTOMATION & PRICING -->
-    <div class="proj-category">
+    <!-- AUTOMATION -->
+    <div class="proj-category reveal">
       <div class="cat-label"><i class="bi bi-lightning-charge"></i> Automation & Pricing</div>
       <div class="proj-list">
 
@@ -89,7 +86,7 @@
           <p>Automated pricing calculation system built in NetSuite SuiteScript. Dynamically computes customer pricing based on tier classifications, delivery zones, package weight/dimensions, and volume rules — eliminating manual quoting and ensuring consistent margin application across all customer accounts.</p>
           <div class="proj-highlights">
             <div><i class="bi bi-check2"></i> Dynamic pricing rules engine</div>
-            <div><i class="bi bi-check2"></i> Customer tier & zone-based logic</div>
+            <div><i class="bi bi-check2"></i> Customer tier &amp; zone-based logic</div>
             <div><i class="bi bi-check2"></i> Real-time quote generation</div>
             <div><i class="bi bi-check2"></i> NetSuite CRM integration</div>
           </div>
@@ -100,14 +97,14 @@
           <div class="proj-full-header">
             <div class="proj-full-icon inv"><i class="bi bi-boxes"></i></div>
             <div>
-              <h2>Inventory & Fulfillment Approval Workflow</h2>
+              <h2>Inventory &amp; Fulfillment Approval Workflow</h2>
               <div class="proj-meta"><span class="badge-status">Ongoing</span></div>
             </div>
           </div>
           <p>Multi-step fulfillment approval process built on NetSuite workflows. Manages high-volume inventory requests with automated routing based on business rules, escalation paths for exceptions, approval gating before fulfillment execution, and full audit logging. Integrates with warehouse operations for real-time inventory visibility.</p>
           <div class="proj-highlights">
             <div><i class="bi bi-check2"></i> Multi-level approval routing</div>
-            <div><i class="bi bi-check2"></i> Exception escalation & alerting</div>
+            <div><i class="bi bi-check2"></i> Exception escalation &amp; alerting</div>
             <div><i class="bi bi-check2"></i> Real-time inventory sync</div>
             <div><i class="bi bi-check2"></i> Full audit trail</div>
           </div>
@@ -117,16 +114,15 @@
       </div>
     </div>
 
-    <!-- CATEGORY: FINANCIAL SYSTEMS -->
-    <div class="proj-category">
+    <!-- FINANCIAL -->
+    <div class="proj-category reveal">
       <div class="cat-label"><i class="bi bi-bar-chart-line"></i> Financial Systems & Reporting</div>
       <div class="proj-list">
-
         <div class="proj-full-card">
           <div class="proj-full-header">
             <div class="proj-full-icon fin"><i class="bi bi-file-earmark-bar-graph"></i></div>
             <div>
-              <h2>High-Volume Financial Reports & Accounts</h2>
+              <h2>High-Volume Financial Reports &amp; Accounts</h2>
               <div class="proj-meta"><span class="badge-status">Ongoing</span></div>
             </div>
           </div>
@@ -139,12 +135,11 @@
           </div>
           <div class="proj-tags"><span>SuiteAnalytics</span><span>Finance</span><span>Reporting</span><span>NetSuite</span></div>
         </div>
-
       </div>
     </div>
 
-    <!-- CATEGORY: INTEGRATIONS -->
-    <div class="proj-category">
+    <!-- INTEGRATIONS -->
+    <div class="proj-category reveal">
       <div class="cat-label"><i class="bi bi-plug"></i> API & Messaging Integrations</div>
       <div class="proj-list">
 
@@ -152,7 +147,7 @@
           <div class="proj-full-header">
             <div class="proj-full-icon msg"><i class="bi bi-chat-dots-fill"></i></div>
             <div>
-              <h2>SMS & WhatsApp Provider Integration</h2>
+              <h2>SMS &amp; WhatsApp Provider Integration</h2>
               <div class="proj-meta"><span class="badge-new">New 2025</span></div>
             </div>
           </div>
@@ -161,7 +156,7 @@
             <div><i class="bi bi-check2"></i> SMS provider API integration</div>
             <div><i class="bi bi-check2"></i> WhatsApp Business API setup</div>
             <div><i class="bi bi-check2"></i> Webhook-driven event notifications</div>
-            <div><i class="bi bi-check2"></i> Two-way messaging & support flow</div>
+            <div><i class="bi bi-check2"></i> Two-way messaging &amp; support flow</div>
             <div><i class="bi bi-check2"></i> NetSuite + Backendless sync</div>
           </div>
           <div class="proj-tags"><span>SMS API</span><span>WhatsApp Business</span><span>Webhooks</span><span>REST</span><span>Backendless</span></div>
@@ -171,15 +166,15 @@
           <div class="proj-full-header">
             <div class="proj-full-icon api"><i class="bi bi-headset"></i></div>
             <div>
-              <h2>Customer API Support & Integration Services</h2>
+              <h2>Customer API Support &amp; Integration Services</h2>
               <div class="proj-meta"><span class="badge-status">Ongoing</span></div>
             </div>
           </div>
           <p>Ongoing technical enablement for enterprise customers — covering REST API consultation, custom endpoint development, third-party connector configuration, request/response troubleshooting, and integration documentation. Supports customers across onboarding, go-live, and post-launch phases.</p>
           <div class="proj-highlights">
-            <div><i class="bi bi-check2"></i> REST API design & documentation</div>
+            <div><i class="bi bi-check2"></i> REST API design &amp; documentation</div>
             <div><i class="bi bi-check2"></i> Third-party connector setup</div>
-            <div><i class="bi bi-check2"></i> Integration testing & debugging</div>
+            <div><i class="bi bi-check2"></i> Integration testing &amp; debugging</div>
             <div><i class="bi bi-check2"></i> Customer onboarding support</div>
           </div>
           <div class="proj-tags"><span>REST API</span><span>Integration</span><span>Customer Support</span><span>Documentation</span></div>
@@ -188,8 +183,8 @@
       </div>
     </div>
 
-    <!-- LEGACY PROJECTS -->
-    <div class="proj-category">
+    <!-- EARLIER -->
+    <div class="proj-category reveal">
       <div class="cat-label"><i class="bi bi-archive"></i> Earlier Projects</div>
       <div class="proj-list two-col">
 
@@ -213,7 +208,7 @@
               <div class="proj-meta"><span>2023</span></div>
             </div>
           </div>
-          <p>Consulting engagement to rewrite, refactor and performance-optimize a client's existing NetSuite JavaScript API codebase. Delivered bug fixes, best-practice restructuring, and measurable performance improvements across their integration layer.</p>
+          <p>Consulting engagement to rewrite, refactor, and performance-optimize a client's existing NetSuite JavaScript API codebase. Delivered bug fixes, best-practice restructuring, and measurable performance improvements across their integration layer.</p>
           <div class="proj-tags"><span>JavaScript</span><span>NetSuite API</span><span>Optimization</span></div>
         </div>
 
@@ -223,11 +218,10 @@
   </div>
 </section>
 
-<!-- CTA -->
 <section class="cta-section">
   <div class="container cta-inner">
     <h2>Have a project in mind?</h2>
-    <p>I'm available for NetSuite development, data migration consulting, API integration, and enterprise backend work.</p>
+    <p>Available for NetSuite development, data migration consulting, API integration, and enterprise backend work.</p>
     <a href="contact.html" class="btn-primary">Get in Touch <i class="bi bi-arrow-right"></i></a>
   </div>
 </section>
